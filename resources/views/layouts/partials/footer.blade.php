@@ -1,0 +1,2 @@
+ <!-- footer -->
+ <footer>este es el pie de pagina</footer>
