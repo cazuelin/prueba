@@ -18,6 +18,12 @@ return view('contactanos.index');
             'correo'=>'required|email',
             'mensaje'=>'required'
         ]);
+
+
+
+
+
+        
         $correo = new ContactMailable($request->all());
     Mail::to('cazeltadark44@gmail.com')->send($correo);
     return redirect()->route('contactanos.index')->with('info','mensaje enviado');
